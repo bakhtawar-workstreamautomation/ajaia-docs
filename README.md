@@ -4,7 +4,7 @@ A lightweight collaborative document editor, built for the Ajaia AI-Native Full 
 
 ## Live Demo
 
-- **Live URL:** _[fill in after you deploy — see "Deploying" below]_
+- **Live URL:**  https://ajaia-docs-production-2e03.up.railway.app/
 - **Seeded accounts (no password needed):** `alice`, `bob`, `carol`
 
 Suggested reviewer flow:
@@ -78,7 +78,5 @@ See `ARCHITECTURE.md` for the full reasoning. Short version:
 ## Deploying
 
 Because this has zero dependencies, deployment is simple on any Node host:
-- **Render / Railway / Fly.io:** point at this repo, start command `node server.js`, no build command needed.
-- **A VM/VPS:** `node server.js` behind a reverse proxy, or run with `pm2 start server.js`.
+- **Railway:** point at this repo, start command `node server.js`, no build command needed.
 
-The only requirement is a writable filesystem for `data/db.json` to persist across restarts (works out of the box on most PaaS providers backed by persistent disks; on ephemeral-filesystem platforms, data resets on redeploy — acceptable for a review/demo build, called out here for transparency).
