@@ -208,6 +208,6 @@ const server = http.createServer((req, res) => {
   serveStatic(req, res, pathname);
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, '0.0.0.0', () => {
   console.log(`Ajaia Docs running at http://localhost:${PORT}`);
 });
