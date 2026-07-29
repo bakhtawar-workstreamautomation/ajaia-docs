@@ -42,7 +42,7 @@ function sendJson(res, status, payload) {
   });
   res.end(body);
 }
-
+//Added comments
 function readJsonBody(req) {
   return new Promise((resolve, reject) => {
     let data = '';
