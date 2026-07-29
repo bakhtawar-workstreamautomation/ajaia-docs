@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: ajaia-docs
+    runtime: node
+    plan: free
+    buildCommand: "echo 'No build step needed -- zero dependencies'"
+    startCommand: "node server.js"
+    envVars:
+      - key: NODE_VERSION
+        value: 20.0.0
+    # Free tier note: this disk does NOT persist on the free plan (Render's
+    # free tier has no disk add-on). data/db.json will reset whenever the
+    # service restarts/redeploys/sleeps-and-wakes on a new instance. This is
+    # an accepted, disclosed tradeoff for a free review/demo deployment --
+    # see README.md and DEPLOY_RENDER.md for details and the paid-tier fix.
