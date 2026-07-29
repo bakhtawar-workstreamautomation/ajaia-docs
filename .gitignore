@@ -1,4 +1,9 @@
 node_modules/
-data/db.json
 *.log
 .DS_Store
+# NOTE: data/db.json is intentionally NOT ignored on purpose.
+# Railway's filesystem is ephemeral — anything written at runtime is lost on
+# redeploy. Shipping the seed DB in the repo gives the first deploy a
+# starting state to fall back to. Runtime writes go to a Railway-mounted
+# Volume (see README "Deploying on Railway").
+
