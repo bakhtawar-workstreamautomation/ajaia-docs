@@ -1,8 +1,0 @@
-Walkthrough video (Loom/YouTube unlisted, 3-5 minutes): [ADD LINK HERE AFTER RECORDING]
-
-Suggested structure for the recording (see AI_WORKFLOW.md and ARCHITECTURE.md for the underlying detail):
-1. (30s) What this is: a lightweight collaborative doc editor, zero-dependency Node backend + Quill editor frontend.
-2. (90s) Live demo: log in as alice, show the owned welcome doc, edit some formatting, create a new doc, import a .md file.
-3. (60s) Switch to bob's account to show the shared document appearing under "Shared with Me"; go back to alice and share a new doc with carol live.
-4. (45s) What I deprioritized and why: real-time collaboration, read-only sharing, .docx import -- and why (see ARCHITECTURE.md).
-5. (30s) How AI supported the workflow: used Claude as a pair programmer for scaffolding, test generation, and docs; verified everything myself via curl + the automated test suite + a manual restart-persistence check (see AI_WORKFLOW.md for specifics).
